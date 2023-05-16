@@ -22,7 +22,7 @@ function Products(props){
                         </Col>}
                         <Product />
                         {showButton && <Col className="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center mt-4">
-                            <Link to="products" className="btn-showMore btn"> <span> Show More </span> </Link>
+                            <Link to="/products" className="btn-showMore btn"> <span> Show More </span> </Link>
                         </Col>}
                     </Row>
                 </Container>
