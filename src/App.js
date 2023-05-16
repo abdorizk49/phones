@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <NavbarPhone />
       <Routes>
-        <Route path='' element={<HomePage />} ></Route>
+        <Route path='phones' element={<HomePage />} ></Route>
         <Route path='products' element={<ProductsPage />} ></Route>
         <Route path='products/:productId' element={<ProductDetailsPage />}></Route>
         <Route path='wishlists' element={<WishlistsPage />}></Route>
