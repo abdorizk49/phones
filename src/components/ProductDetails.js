@@ -1,7 +1,7 @@
 import { faFacebookF, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Col, Container, Image, Row } from "react-bootstrap";
+import { Button, Container, Image, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, minusQuantity, plusQuantity } from "../rtk/slices/cart-slice";
@@ -29,12 +29,12 @@ function ProductDetails(props){
             <section className="productDetails pt-5 pb-5">
                 <Container>
                     <Row>
-                        <Col className="col-lg-6 col-md-6 col-sm-12">
+                        <div className="col-lg-6 col-md-6 col-sm-12">
                             <div className="img-product mb-4">
                                 <Image src={product.image} alt="" className="img-fluid w-100" />
                             </div>
-                        </Col>
-                        <Col className="col-lg-6 col-md-6 col-sm-12">
+                        </div>
+                        <div className="col-lg-6 col-md-6 col-sm-12">
                             <div className="details-product">
                                 <div className="head-details">
                                     <h3>{product.title}</h3>
@@ -86,7 +86,7 @@ function ProductDetails(props){
                                     </ul>
                                 </div>
                             </div>
-                        </Col>
+                        </div>
                     </Row>
                 </Container>
             </section>

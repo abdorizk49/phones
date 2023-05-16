@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Col, Form, InputGroup } from "react-bootstrap";
+import { Button, Form, InputGroup } from "react-bootstrap";
 
 function Login() {
   const [validated, setValidated] = useState(false);
@@ -16,7 +16,7 @@ function Login() {
   return (
     <>
       <Form className="row" noValidate validated={validated} onSubmit={handleSubmit}>
-        <Col className="col-md-12">
+        <div className="col-md-12">
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <InputGroup hasValidation>
               <Form.Control
@@ -30,8 +30,8 @@ function Login() {
               </Form.Control.Feedback>
             </InputGroup>
           </Form.Group>
-        </Col>
-        <Col className="col-md-12">
+        </div>
+        <div className="col-md-12">
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <InputGroup hasValidation>
               <Form.Control
@@ -45,12 +45,12 @@ function Login() {
               </Form.Control.Feedback>
             </InputGroup>
           </Form.Group>
-        </Col>
-        <Col className="col-md-12 justify-content-center d-flex">
+        </div>
+        <div className="col-md-12 justify-content-center d-flex">
           <Button variant="" type="submit">
             <span>Login</span>
           </Button>
-        </Col>
+        </div>
       </Form>
     </>
   );

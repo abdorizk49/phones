@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Col, Form, Image, InputGroup } from "react-bootstrap";
+import { Button, Form, Image, InputGroup } from "react-bootstrap";
 import ImageUpload from "../img/icons/upload-01.png";
 
 function Register() {
@@ -26,7 +26,7 @@ function Register() {
         validated={validated}
         onSubmit={handleSubmit}
       >
-        <Col className="col-md-6">
+        <div className="col-md-6">
           <Form.Group className="mb-3" controlId="formBasicFName">
             <InputGroup hasValidation>
               <Form.Control
@@ -40,8 +40,8 @@ function Register() {
               </Form.Control.Feedback>
             </InputGroup>
           </Form.Group>
-        </Col>
-        <Col className="col-md-6">
+        </div>
+        <div className="col-md-6">
           <Form.Group className="mb-3" controlId="formBasicPhone">
             <InputGroup hasValidation>
               <Form.Control
@@ -55,8 +55,8 @@ function Register() {
               </Form.Control.Feedback>
             </InputGroup>
           </Form.Group>
-        </Col>
-        <Col className="col-md-12">
+        </div>
+        <div className="col-md-12">
           <Form.Group className="mb-3" controlId="formBasicPhoto">
             <InputGroup hasValidation>
               <Form.Control
@@ -75,8 +75,8 @@ function Register() {
             </InputGroup>
           </Form.Group>
           <div className="nameFile mb-3"><strong>{selectedFile && selectedFile.name}</strong></div>
-        </Col>
-        <Col className="col-md-12">
+        </div>
+        <div className="col-md-12">
           <Form.Group className="mb-3" controlId="formBasicAddress">
             <InputGroup hasValidation>
               <Form.Control
@@ -90,8 +90,8 @@ function Register() {
               </Form.Control.Feedback>
             </InputGroup>
           </Form.Group>
-        </Col>
-        <Col className="col-md-6">
+        </div>
+        <div className="col-md-6">
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <InputGroup hasValidation>
               <Form.Control
@@ -105,8 +105,8 @@ function Register() {
               </Form.Control.Feedback>
             </InputGroup>
           </Form.Group>
-        </Col>
-        <Col className="col-md-6">
+        </div>
+        <div className="col-md-6">
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <InputGroup hasValidation>
               <Form.Control
@@ -120,12 +120,12 @@ function Register() {
               </Form.Control.Feedback>
             </InputGroup>
           </Form.Group>
-        </Col>
-        <Col className="col-md-12 justify-content-center d-flex">
+        </div>
+        <div className="col-md-12 justify-content-center d-flex">
           <Button variant="" className="mb-0" type="submit">
             <span>Register</span>
           </Button>
-        </Col>
+        </div>
       </Form>
     </>
   );

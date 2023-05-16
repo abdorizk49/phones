@@ -1,6 +1,6 @@
 // import { useEffect, useState } from "react";
 import { useEffect, useState } from "react";
-import { Card, Col, Spinner } from "react-bootstrap";
+import { Card, Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
 // import {products} from "../api/API"
 
@@ -22,11 +22,11 @@ function Product() {
 
     if (!products) {
         return (
-          <Col className="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center mt-4">
+          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center mt-4">
             <Spinner animation="border" role="status">
               <span className="visually-hidden">Loading...</span>
             </Spinner>
-          </Col>
+          </div>
         );
       }
     
@@ -35,7 +35,7 @@ function Product() {
 
     const productData =  fourProducts?.map((product) => {
         return(
-            <Col className="col-lg-3 col-md-3 col-sm-6 col-xs-6" key={product.id}>
+            <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6" key={product.id}>
                 <Card className="product mb-3">
                     <div className="card-head">
                         <Card.Img src={product.image} alt="" className="img-fluid"/>
@@ -51,7 +51,7 @@ function Product() {
                         <Link to={`../products/${product.id}`} className="btn"> <span>Add to Cart</span> </Link>
                     </Card.Body>
                 </Card>
-            </Col>
+            </div>
         )
     })
 

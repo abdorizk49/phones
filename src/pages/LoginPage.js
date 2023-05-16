@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import '../style.scss'
 import { Link } from "react-router-dom";
 import Login from "../components/Login";
@@ -9,9 +9,9 @@ function LoginPage(){
           <section className="forms login-page">
             <Container>
               <Row className="justify-content-center">
-                <Col className="col-md-6">
+                <div className="col-md-6">
                   <Row>
-                    <Col className="col-md-12">
+                    <div className="col-md-12">
                       <div className="head-section">
                         <h4> Login </h4>
                         <p>
@@ -19,10 +19,10 @@ function LoginPage(){
                           <Link to='/register'>Register Page</Link>.
                         </p>
                       </div>
-                    </Col>
+                    </div>
                   </Row>
                   <Login />
-                </Col>
+                </div>
               </Row>
             </Container>
           </section>

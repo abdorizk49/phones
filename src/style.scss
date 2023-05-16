@@ -485,3 +485,16 @@ footer{
         width: 100%;
     }
 }
+
+
+@media (max-width: 575px){
+    .products{
+        .product{
+            .card-head{
+                .card-img{
+                    height: auto;
+                }
+            }
+        }
+    }
+}

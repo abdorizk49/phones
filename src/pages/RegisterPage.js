@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "../style.scss";
 import Register from "../components/Register";
 import { Link } from "react-router-dom";
@@ -9,9 +9,9 @@ function RegisterPage() {
       <section className="forms register-page">
         <Container>
           <Row className="justify-content-center">
-            <Col className="col-md-8">
+            <div className="col-md-8">
               <Row>
-                <Col className="col-md-12">
+                <div className="col-md-12">
                   <div className="head-section">
                     <h4> Register </h4>
                     <p>
@@ -19,10 +19,10 @@ function RegisterPage() {
                       <Link to="/login">Login Page</Link>.
                     </p>
                   </div>
-                </Col>
+                </div>
               </Row>
               <Register />
-            </Col>
+            </div>
           </Row>
         </Container>
       </section>

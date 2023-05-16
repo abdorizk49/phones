@@ -1,4 +1,4 @@
-import { Button, Col, Container, Form, InputGroup } from "react-bootstrap";
+import { Button, Container, Form, InputGroup } from "react-bootstrap";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
@@ -51,7 +51,7 @@ function UpdateProduct() {
         <Container>
           <h3>Update Product {productId} </h3>
           <Form className="row" onSubmit={formSubmit}>
-            <Col className="col-md-6 col-sm-6 col-xs-12">
+            <div className="col-md-6 col-sm-6 col-xs-12">
               <Form.Group className="mb-3" controlId="ProductName">
                 <InputGroup className="mb-3">
                   <Form.Control
@@ -64,8 +64,8 @@ function UpdateProduct() {
                   />
                 </InputGroup>
               </Form.Group>
-            </Col>
-            <Col className="col-md-6 col-sm-6 col-xs-12">
+            </div>
+            <div className="col-md-6 col-sm-6 col-xs-12">
               <Form.Group className="mb-3" controlId="ProductImage">
                 <InputGroup className="mb-3">
                   <Form.Control
@@ -78,8 +78,8 @@ function UpdateProduct() {
                   />
                 </InputGroup>
               </Form.Group>
-            </Col>
-            <Col className="col-md-12 col-sm-6 col-xs-12">
+            </div>
+            <div className="col-md-12 col-sm-6 col-xs-12">
               <Form.Group className="mb-3" controlId="ProductDescription">
                 <InputGroup className="mb-3">
                   <Form.Control
@@ -92,8 +92,8 @@ function UpdateProduct() {
                   />
                 </InputGroup>
               </Form.Group>
-            </Col>
-            <Col className="col-md-4 col-sm-6 col-xs-12">
+            </div>
+            <div className="col-md-4 col-sm-6 col-xs-12">
               <Form.Group className="mb-3" controlId="ProductPrice">
                 <InputGroup className="mb-3">
                   <Form.Control
@@ -106,8 +106,8 @@ function UpdateProduct() {
                   />
                 </InputGroup>
               </Form.Group>
-            </Col>
-            <Col className="col-md-4 col-sm-6 col-xs-12">
+            </div>
+            <div className="col-md-4 col-sm-6 col-xs-12">
               <Form.Group className="mb-3" controlId="ProductCategory">
                 <InputGroup className="mb-3">
                   <Form.Control
@@ -121,8 +121,8 @@ function UpdateProduct() {
                   <datalist id="datalistOptions">{dataList}</datalist>
                 </InputGroup>
               </Form.Group>
-            </Col>
-            <Col className="col-md-4 col-sm-6 col-xs-12">
+            </div>
+            <div className="col-md-4 col-sm-6 col-xs-12">
               <Form.Group className="mb-3" controlId="ProductCount">
                 <InputGroup className="mb-3">
                   <Form.Control
@@ -135,12 +135,12 @@ function UpdateProduct() {
                   />
                 </InputGroup>
               </Form.Group>
-            </Col>
-            <Col className="col-md-12 justify-content-center d-flex">
+            </div>
+            <div className="col-md-12 justify-content-center d-flex">
               <Button variant="" type="submit">
                 <span>Update</span>
               </Button>
-            </Col>
+            </div>
           </Form>
         </Container>
       </section>

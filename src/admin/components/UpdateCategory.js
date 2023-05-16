@@ -1,4 +1,4 @@
-import { Button, Col, Container, Form, InputGroup } from "react-bootstrap";
+import { Button, Container, Form, InputGroup } from "react-bootstrap";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
@@ -34,7 +34,7 @@ function UpdateCategory(){
                 <Container>
                     <h3>Update Category {productId} </h3>
                     <Form className="row" onSubmit={formSubmit}>
-                        <Col className="col-md-12">
+                        <div className="col-md-12">
                             <Form.Group className="mb-3" controlId="formBasicCategoty">
                                 <InputGroup>
                                     <Form.Control
@@ -46,12 +46,12 @@ function UpdateCategory(){
                                     />
                                 </InputGroup>
                             </Form.Group>
-                        </Col>
-                        <Col className="col-md-12 justify-content-center d-flex">
+                        </div>
+                        <div className="col-md-12 justify-content-center d-flex">
                             <Button variant="" type="submit">
                                 <span>Update</span>
                             </Button>
-                        </Col>
+                        </div>
                     </Form>
                 </Container>
             </section>

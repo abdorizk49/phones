@@ -1,4 +1,4 @@
-import { Button, Col, Container, Form, InputGroup } from "react-bootstrap";
+import { Button, Container, Form, InputGroup } from "react-bootstrap";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -28,7 +28,7 @@ function AddCategory() {
         <Container>
           <h3>Add New Category</h3>
           <Form className="row" onSubmit={formSubmit}>
-            <Col className="col-md-12">
+            <div className="col-md-12">
                 <Form.Group className="mb-3" controlId="formBasicCategoty">
                     <InputGroup>
                         <Form.Control
@@ -40,12 +40,12 @@ function AddCategory() {
                         />
                     </InputGroup>
                 </Form.Group>
-            </Col>
-            <Col className="col-md-12 justify-content-center d-flex">
+            </div>
+            <div className="col-md-12 justify-content-center d-flex">
                 <Button variant="" type="submit">
                     <span>Add Category</span>
                 </Button>
-            </Col>
+            </div>
           </Form>
         </Container>
       </section>

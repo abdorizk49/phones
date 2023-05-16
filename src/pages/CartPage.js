@@ -17,18 +17,18 @@ function CartPage(){
             <section className="cart pt-5 pb-5">
                 <Container>
                     <Row>
-                        <Col className="col-lg-12 col-md-12">
+                        <div className="col-lg-12 col-md-12">
                             <div className="head-section">
                                 <h2>Cart</h2>
                             </div>
-                        </Col>
-                        <Col className="col-lg-12 col-md-12">
+                        </div>
+                        <div className="col-lg-12 col-md-12">
                             <Cart />
                             <Button onClick={() => dispatch(clear())}>
                                 <span>Clear Cart</span>
                             </Button>
                             <h5 className="mt-4"> Total Price: {totalPrice.toFixed(2)} E.P</h5>
-                        </Col>
+                        </div>
                     </Row>
                 </Container>
             </section>
