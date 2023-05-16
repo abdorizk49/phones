@@ -1,4 +1,4 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Container, Row } from "react-bootstrap";
 import Cart from "../components/Cart";
 import { useDispatch, useSelector } from "react-redux";
 import { clear } from "../rtk/slices/cart-slice";
