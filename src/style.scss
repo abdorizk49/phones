@@ -141,6 +141,9 @@ a{
         .card-head{
             position: relative;
             margin-bottom: 12px;
+            .card-img{
+                max-height: 300px;
+            }
             .card-title{
                 display: -webkit-box;
                 -webkit-line-clamp: 1;
