@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/phones/static/css/main.cd704adc.css",
-    "main.js": "/phones/static/js/main.97caf60b.js",
-    "static/js/787.a36da101.chunk.js": "/phones/static/js/787.a36da101.chunk.js",
-    "static/media/banner01.jpg": "/phones/static/media/banner01.f97e265e840c877ba087.jpg",
-    "static/media/logo.png": "/phones/static/media/logo.c7e990aa5073e1ad3fbb.png",
-    "index.html": "/phones/index.html",
-    "main.cd704adc.css.map": "/phones/static/css/main.cd704adc.css.map",
-    "main.97caf60b.js.map": "/phones/static/js/main.97caf60b.js.map",
-    "787.a36da101.chunk.js.map": "/phones/static/js/787.a36da101.chunk.js.map"
+    "main.css": "/abdo/phones/static/css/main.cd704adc.css",
+    "main.js": "/abdo/phones/static/js/main.c1ebabe8.js",
+    "static/js/787.a36da101.chunk.js": "/abdo/phones/static/js/787.a36da101.chunk.js",
+    "static/media/banner01.jpg": "/abdo/phones/static/media/banner01.f97e265e840c877ba087.jpg",
+    "static/media/logo.png": "/abdo/phones/static/media/logo.c7e990aa5073e1ad3fbb.png",
+    "index.html": "/abdo/phones/index.html",
+    "main.cd704adc.css.map": "/abdo/phones/static/css/main.cd704adc.css.map",
+    "main.c1ebabe8.js.map": "/abdo/phones/static/js/main.c1ebabe8.js.map",
+    "787.a36da101.chunk.js.map": "/abdo/phones/static/js/787.a36da101.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd704adc.css",
-    "static/js/main.97caf60b.js"
+    "static/js/main.c1ebabe8.js"
   ]
 }

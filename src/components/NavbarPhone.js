@@ -13,12 +13,12 @@ function NavbarPhone() {
     <>
       <Navbar expand="lg">
         <Container>
-          <Link to='phones' className="navbar-brand"><Image src={logo} className="img-fluid" /></Link>
+          <Link to='../phones' className="navbar-brand"><Image src={logo} className="img-fluid" /></Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Link to='phones' className="nav-link">home</Link>
-              <Link to='products' className="nav-link">products</Link>
+              <Link to='../phones' className="nav-link">home</Link>
+              <Link to='../products' className="nav-link">products</Link>
               <Link to="wishlists" className="nav-link">
               <FontAwesomeIcon icon={faHeart} />
                 <span>{wishlist.length}</span>
